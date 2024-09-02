@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconlunar.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LunarGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo6.png" alt="Logo da Loja" width="200px" height="200px">
+            </a>
+        </div>
+        
+      
+    </header>    
+
+    <nav class="menu">
+        <ul>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="ps.html">JOGOS PS</a></li>
+            <li><a href="xbox.html">JOGOS XBOX</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+            <li><a href="login.html">PERFIL</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <div class="produto">
+            <img src="./img/hogwartslegacy.webp" alt="Produto 1">
+            <h3>Hogwarts Legacy Deluxe Edition Xbox One / Xbox Ser...</h3>
+            <p class="preco">R$ 189,90</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Hogwarts Legacy Deluxe Edition Xbox One / Xbox Ser...', 189.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+    
+        <div class="produto">
+            <img src="./img/jedi.webp" alt="Produto 1">
+            <h3>Star Wars Jedi Survivor Xbox Series S/X – Có...</h3>
+            <p class="preco">R$ 220,00</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Star Wars Jedi Survivor Xbox Series S/X – Có...', 220.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+    
+        <div class="produto">
+            <img src="./img/gta5.webp" alt="Produto 1">
+            <h3>GTA V Xbox One Código 25 Dígitos</h3>
+            <p class="preco">R$ 109,90</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('GTA V Xbox One Código 25 Dígitos', 139.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto">
+            <img src="./img/fifa23xbox.webp" alt="Produto 1">
+            <h3>Fifa 23 Xbox Series S/X Código 25 Dígitos</h3>
+            <p class="preco">R$ 239,90</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Fifa 23 Xbox Series S/X Código 25 Dígitos', 239.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto">
+            <img src="./img/reddead.webp" alt="Produto 1">
+            <h3>Red Dead Redemption 2 Xbox Series S/X Código 25 dígitos</h3>
+            <p class="preco">R$ 219,89</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Red Dead Redemption 2 Xbox Series S/X Código 25 dígitos', 219.89)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto">
+            <img src="./img/eldenring.webp" alt="Produto 1">
+            <h3>Elden Ring Xbox One / Xbox Series S/X Código 25 Dí...</h3>
+            <p class="preco">R$ 259,90</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Elden Ring Xbox One / Xbox Series S/X Código 25 Dí...', 259.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+        </div>
+    
+    <footer>
+        <div class="midias">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p class="copyright"> © 2023 LunarGames - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    carrinho.push({ nome: nome, preco: preco });
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert('Produto adicionado ao carrinho!');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconlunar.ico">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <title>LunarGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo6.png" alt="Logo da Loja" width="200px" height="200px">
+            </a>
+        </div>
+        
+    </header>    
+
+    <nav class="menu">
+        <ul>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="ps.html">JOGOS PS</a></li>
+            <li><a href="xbox.html">JOGOS XBOX</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+            <li><a href="login.html">PERFIL</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="conteudo">
+    <div class="img">
+       <img src="./img/reddead.webp" alt="" width="350px">
+    </div>
+
+    <div class="titulo">
+        <h1>Red Dead Redemption 2 Xbox One Código 25 dígitos</h1>
+        <p class="preco">R$ 219,89</p>
+        <p class="descricao"><b>Compatível:</b> Xbox One e Xbox Series <br>
+            <b>Envio por e-mail</b> (Código 25 dígitos) <br>
+            <b>Lançamento:</b> 05/12/2019 <br>
+            <b>Publisher:</b> Rockstar <br>
+            <b>Tamanho:</b> 100GB <br>
+            <b>Áudio:</b> Ingles <br>
+            <b>Legenda:</b> Portugues <br>
+            <b>Categoria:</b> Aventura</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Red Dead Redemption 2 Xbox Series S/X Código 25 dígitos', 219.89)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div></div>
+
+    <div class="desc">
+        <h1>Red Dead Redemption 2 Xbox One Código 25 dígitos</h1>
+        <p>Estados Unidos, 1899. O fim da era do velho oeste começou, e as autoridades estão caçando as últimas gangues de fora da lei que restam. Os que não se rendem, nem sucumbem, são mortos. <br><br>
+            Depois de tudo dar errado durante um roubo em uma cidade do oeste chamada Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a fugir. Com agentes federais e os melhores caçadores de recompensas no seu encalço. <br><br>
+            A gangue precisa roubar, assaltar e lutar para sobreviver no impiedoso coração dos Estados Unidos. Conforme divisões internas profundas ameaçam despedaçar a gangue, Arthur deve fazer uma escolha entre os seus próprios ideais e a lealdade à gangue que o criou. <br><br>
+            Dos criadores de Grand Theft Auto V e Red Dead Redemption, Red Dead Redemption 2 é uma história épica sobre a vida nos Estados Unidos no alvorecer dos tempos modernos. <br><br>
+            Informações importantes:
+            
+            <ul><li>
+                •  Vem com a Campanha e o Online inclusos</li></ul></p>
+    </div>
+
+
+
+
+    <footer>
+        <div class="midias">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p class="copyright"> © 2023 LunarGames - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+        function adicionarAoCarrinho(nome, preco) {
+            var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome: nome, preco: preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert('Produto adicionado ao carrinho!');
+        }
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconlunar.ico">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <title>LunarGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo6.png" alt="Logo da Loja" width="200px" height="200px">
+            </a>
+        </div>
+        
+    </header>    
+
+    <nav class="menu">
+        <ul>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="ps.html">JOGOS PS</a></li>
+            <li><a href="xbox.html">JOGOS XBOX</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+            <li><a href="login.html">PERFIL</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="conteudo">
+    <div class="img">
+       <img src="./img/spidermanmiles.webp" alt="" width="450px">
+    </div>
+
+    <div class="titulo">
+        <h1>Spider-Man: Miles Morales - PS5</h1>
+        <p class="preco">R$ 129,90</p>
+        <p class="descricao"><b>Compatível:</b> PS5 <br>
+            <b>Envio:</b> Em até 20 dias úteis <br>
+            <b>Lançamento:</b> 12/11/2020 <br>
+            <b>Publisher:</b> Sony Interactive Entertainment <br>
+            <b>Tamanho:</b> 50GB <br>
+            <b>Áudio:</b> Ingles <br>
+            <b>Legenda:</b> Portugues <br>
+            <b>Categoria:</b> Ação</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Spider-Man: Miles Morales - PS5', 129.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div></div>
+
+    <div class="desc">
+        <h1>Spider-Man: Miles Morales - PS5</h1> 
+        <p>Na mais nova aventura do universo de Marvel's Spider-Man, o adolescente Miles Morales está se adaptando a um novo lar enquanto segue os passos de seu mentor, Peter Parker, como novo Spider-Man. <br> <br>
+          Mas quando uma violenta disputa de forças ameaça destruir sua vizinhança, o aspirante a herói percebe que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles deve reconhecer e assumir o título de Spider-Man.</p>
+    </div>
+
+
+
+
+    <footer>
+        <div class="midias">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p class="copyright"> © 2023 LunarGames - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+        function adicionarAoCarrinho(nome, preco) {
+            var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome: nome, preco: preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert('Produto adicionado ao carrinho!');
+        }
+      </script>
+    
+</body>
+</html>

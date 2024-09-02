@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconlunar.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LunarGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo6.png" alt="Logo da Loja" width="200px" height="200px">
+            </a>
+        </div>
+        
+      
+    </header>    
+
+    <nav class="menu">
+        <ul>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="ps.html">JOGOS PS</a></li>
+            <li><a href="xbox.html">JOGOS XBOX</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+            <li><a href="login.html">PERFIL</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="produto2">
+            <img src="./img/playstation5.webp" alt="Produto 1">
+            <h3>Console Playstation 5</h3>
+            <p class="preco">R$ 3389,99</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Console Playstation 5', 3389.99)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+    
+        <div class="produto2">
+            <img src="./img/seriesx.webp" alt="Produto 1">
+            <h3>Console Xbox Series X</h3>
+            <p class="preco">R$ 3889,00</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Console Xbox Series X', 3889.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+    
+        <div class="produto2">
+            <img src="./img/seriesS.webp" alt="Produto 1">
+            <h3>Consoles Xbox Series S</h3>
+            <p class="preco">R$ 1889,99</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Consoles Xbox Series S', 1889,99)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto2">
+            <img src="./img/seriesSfort.webp" alt="Produto 1">
+            <h3>Consoles Xbox Series S - Incluso Fortnite, Rock...</h3>
+            <p class="preco">R$ 2679,00</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Consoles Xbox Series S - Incluso Fortnite, Rock...', 2679.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto2">
+            <img src="./img/ps5fc24.webp" alt="Produto 1">
+            <h3>Console Playstation 5 - Incluso FC24</h3>
+            <p class="preco">R$ 3599,00</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Console Playstation 5 - Incluso FC24', 3599.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+
+        <div class="produto2">
+            <img src="./img/seriesxpremium.webp" alt="Produto 1">
+            <h3>Consoles Xbox Series X Versão Premium</h3>
+            <p class="preco">R$ 4199,00</p>
+            <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Consoles Xbox Series X Versão Premium', 4199.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+        </div>
+        </div>
+
+        <footer>
+            <div class="midias">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <p class="copyright"> © 2023 LunarGames - Todos os direitos reservados</p>
+        </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    function adicionarAoCarrinho(nome, preco) {
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    carrinho.push({ nome: nome, preco: preco });
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert('Produto adicionado ao carrinho!');
+}
+</script>
+</body>
+</html>

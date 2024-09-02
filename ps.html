@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconlunar.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LunarGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo6.png" alt="Logo da Loja" width="200px" height="200px">
+            </a>
+        </div>
+        
+      
+    </header>    
+
+    <nav class="menu">
+        <ul>
+            <li><a href="consoles.html">CONSOLES</a></li>
+            <li><a href="ps.html">JOGOS PS</a></li>
+            <li><a href="xbox.html">JOGOS XBOX</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+            <li><a href="login.html">PERFIL</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+    <div class="produto2">
+        <img src="./img/granturismo.webp" alt="Produto 1">
+        <h3>Gran Turismo 7 - PS5</h3>
+        <p class="preco">R$ 219,90</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Gran Turismo 7 - PS5', 219.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/jumanji.webp" alt="Produto 2">
+        <h3>Jumanji O Jogo - PS5</h3>
+        <p class="preco">R$ 190,00</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Jumanji O Jogo - PS5', 190.00)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/sonic.webp" alt="Produto 3">
+        <h3>Sonic Frontiers - PS5</h3>
+        <p class="preco">R$ 239,90</p>
+        <a href="#" class="adicionar-ao-carrinho"  onclick="adicionarAoCarrinho('Sonic Frontiers - PS5', 239.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/thelastofus.webp" alt="Produto 4">
+        <h3>The Last  of Us Parte 1 - PS5</h3>
+        <p class="preco">R$ 89,90</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('The Last  of Us Parte 1 - PS5', 89.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/spidermanmiles.webp" alt="Produto 5">
+        <h3>Spider-Man: Miles Morales - PS5</h3>
+        <p class="preco">R$ 129,90</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Spider-Man: Miles Morales - PS5', 129.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/godofwar.webp" alt="Produto 6">
+        <h3>God of War - Edição de Lançamento - PS5</h3>
+        <p class="preco">R$ 189,90</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('God of War - Edição de Lançamento - PS5', 189.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+
+    <div class="produto2">
+        <img src="./img/stray.webp" alt="Produto 7">
+        <h3>Stray - PS5</h3>
+        <p class="preco">R$ 159,90</p>
+        <a href="#" class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Stray - PS5', 159.90)"><ion-icon name="bag-handle-outline"></ion-icon>Comprar</a>
+    </div>
+    </div>
+
+    <footer>
+        <div class="midias">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p class="copyright"> © 2023 LunarGames - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+            function adicionarAoCarrinho(nome, preco) {
+            var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push({ nome: nome, preco: preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert('Produto adicionado ao carrinho!');
+        }
+</script>
+</body>
+</html>
