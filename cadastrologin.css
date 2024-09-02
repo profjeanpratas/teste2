@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure; 
+    font-family: 'Kanit', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  padding-left: 100px;
+}
+
+
+
+nav {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 5px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+
+ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+nav li a:hover{
+   color:  #00a95d;
+}
+
+.position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgrey;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  
+  form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .buttonsForm {
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #028148;
+  }
+  
+  .buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+  }
+  
+  .btnColor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #00a95d, #0bdd7e);
+    border-radius: 30px;
+    transition: .3s;
+  }
+  
+  input[type="text"], input[type="password"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background: #00a95d;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button[type="submit"]:hover{
+    transform: scale(1.05);
+  }
+
+  .divCheck {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+    margin-top: 45px;
+  }
+  
+  #signin {
+    left: 25px;
+  }
+  
+  #signup {
+    left: 450px;
+  }
+  
+  i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+  }
+  
+  .iEmail {
+    top: 37px;
+  }
+  
+  .iPassword {
+    top: 108px;
+  }
+  
+  .iPassword2 {
+    top: 180px;
+  }
+
+footer{
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 100px 10px;
+}
+
+.midias{
+    margin-bottom: 5px;
+}
+
+.midias ion-icon{
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.midias ion-icon:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+    border: 2px solid #00a95d;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.links a:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+}
+
+.copyright{
+    margin-top: 30px;
+    font-size: 18px;
+}

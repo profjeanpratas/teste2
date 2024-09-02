@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure; 
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    padding-left: 100px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 5px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+ul li ul.dropdown a{
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    transition: 0.3s;
+}
+
+ul li ul.dropdown{
+    width: 110%;
+    background: #ffffff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+   color:  #00a95d;
+}
+
+.titulo .preco {
+    margin-top: 12px;
+    font-size: 1.8rem;
+    color: #197d50;
+    text-align: left;
+}
+
+.adicionar-ao-carrinho {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00a95d;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    border-radius: 6px;
+    width: 85%;
+}
+
+.adicionar-ao-carrinho:hover {
+    background-color: #044f2d;
+}
+
+.adicionar-ao-carrinho ion-icon{
+    color: #fff;
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+p .descricao{
+    padding: 5px;
+}
+
+
+
+.conteudo{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo .img{
+    margin-left: 220px;
+    margin-top: 40px;
+}
+
+.conteudo .titulo{
+    margin-right: 250px;
+}
+
+.titulo{
+    box-shadow: 0px 3px 5px black;
+    padding: 20px 35px;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.titulo h1{
+    font-size: 20px;
+    color: #444444;
+}
+
+
+.desc{
+    box-shadow: 0px 3px 5px black;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+    margin-top: 90px;
+    background-color: white;
+}
+
+.desc h1{
+    font-size: 25px;
+    color: #444444;
+}
+
+.desc p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer{
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 100px 10px;
+}
+
+.midias{
+    margin-bottom: 5px;
+}
+
+.midias ion-icon{
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.midias ion-icon:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+    border: 2px solid #00a95d;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.links a:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+}
+
+.copyright{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.img{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}

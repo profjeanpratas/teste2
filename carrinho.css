@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure; 
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    padding-left: 100px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 5px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+ul li ul.dropdown a{
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    transition: 0.3s;
+}
+
+ul li ul.dropdown{
+    width: 110%;
+    background: #ffffff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+   color:  #00a95d;
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+.carrinho ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrinho li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+
+.remover {
+    background-color: #4caf50;
+    border-radius: 6px;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.remover:hover{
+    background-color: #337737;
+}
+
+.position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position2, .position1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#total {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    margin-top: 430px;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 18px;
+}
+
+.carrinho a {
+    display: block;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1em;
+    font-size: 22px;
+    margin-bottom: 80px;
+    width: 30%;
+
+}
+
+.carrinho a:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+
+
+footer{
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 100px 10px;
+}
+
+.midias{
+    margin-bottom: 5px;
+}
+
+.midias ion-icon{
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.midias ion-icon:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+    border: 2px solid #00a95d;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.links a:hover{
+    transform: scale(1.05);
+    color: #00a95d;
+}
+
+.copyright{
+    margin-top: 30px;
+    font-size: 18px;
+}
